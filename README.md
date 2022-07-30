@@ -1,4 +1,4 @@
-# atomic2field
+# Atomic2Field
 Codes for translating structural defects to atomic properties 
 Z. Yang, M.J. Buehler, Linking Atomic Structural Defects to Mesoscale Properties in Crystalline Solids using Graph Neural Networks, npj Computational Materials, in review
 
