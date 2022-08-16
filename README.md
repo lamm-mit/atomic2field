@@ -12,11 +12,16 @@ pip install -r requirements.txt
 **Dataset**
 - Three datasets are given: Al/Poly, Graphene/Poly, Graphene/Porous
 - The datasets can be found in the following link: https://www.dropbox.com/sh/w3b8u0i63r2y1kq/AACF8mukZ9nDdG4MGj3F1kCUa?dl=0
+- There are 3 files needed to form a dataset: edge.txt, node_features.txt, node_labels.txt
 
 **Train and test**
-- Training: 
+- Check optional arguments for training
 ```
-python PNA.py
+python PNA.py -h
+```
+- Training (Use Polygraphene dataset as an example): 
+```
+python PNA.py --batch_size
 ```
 - Testing:
 ```
