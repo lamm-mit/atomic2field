@@ -32,6 +32,7 @@ Data0 100050 560992 ...
 ```
 
 **Train and test**
+- Put the three data files named as "edge.txt", "node_features.txt" and "node_labels.txt" under "./data" folder. (You can also specific your own data path using --data_path argument)
 - Check optional arguments for training
 ```
 python PNA.py -h
