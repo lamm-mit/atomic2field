@@ -32,7 +32,7 @@ Data0 100050 560992 ...
 ```
 
 **Train and test**
-- Put the three data files named as "edge.txt", "node_features.txt" and "node_labels.txt" under "./data" folder. (You can also specific your own data path using --data_path argument)
+- Put the three data files named as "edge.txt", "node_features.txt" and "node_labels.txt" under "./data" folder. (You can also specify your own data path using --data_path argument)
 - Check optional arguments for training
 ```
 python PNA.py -h
@@ -50,5 +50,7 @@ python test.py -h
 python test.py --data_path "./data/" --batch_size 16 --input_dim 3 --num_layer 6 --max_degree 9 --ckpt_path "./pretrained/Graphene/Poly/ckpt/pretrained.pt"
 ```
 **Pretrained models**
-- Pretrained models are saved as .pt files corresponding to the three datasets in the folder "pretrained" (models are trained on 4 V100 GPUs)                                                       
+- Pretrained models are saved as .pt files corresponding to the three datasets in the folder "pretrained" (models are trained on 4 V100 GPUs). 
+- "Graphene/poly" for von Mises stress field prediction in polycrystalline graphene; "Graphene/Porous" for tensile stress (sxx) field prediction in porous graphene membrane; "Al/Poly" for potential energy distribution prediction in polycrystalline aluminum. 
+- The details of architectures of pretrained models can be found in the paper.                                  
 
