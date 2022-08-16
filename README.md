@@ -26,20 +26,28 @@ Data0 0.0 0.125 ...
 Data0 0.0 0.0 ...
 Data0 0.0 0.125 ...
 ```
+- node_labels.txt: Currently we only train on 1D node label.
+```
+Data0 100050 560992 ...
+```
 
 **Train and test**
 - Check optional arguments for training
 ```
 python PNA.py -h
 ```
-- Training (Use Polygraphene dataset as an example): 
+- Training (Use Polygraphene dataset as an example): we suggest using multiple GPUs given the high memory requirement.
 ```
-python PNA.py --batch_size
+python PNA.py --data_path "./data/" --batch_size 16 --input_dim 3 --num_layer 6 --max_degree 9
 ```
-- Testing:
+- Check optional arguments for testing
 ```
-python test.py
+python test.py -h
+```
+- Testing (Use same arguments as training):
+```
+python test.py --data_path "./data/" --batch_size 16 --input_dim 3 --num_layer 6 --max_degree 9 --ckpt_path "./pretrained/Graphene/Poly/ckpt/pretrained.pt"
 ```
 **Pretrained models**
-- Pretrained models are saved as .pt files corresponding to the three datasets in the folder "pretrained"                                                        
+- Pretrained models are saved as .pt files corresponding to the three datasets in the folder "pretrained" (models are trained on 4 V100 GPUs)                                                       
 
