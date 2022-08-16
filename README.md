@@ -15,10 +15,16 @@ pip install -r requirements.txt
 
 **Custom dataset**
 - There are 3 files needed to form a dataset: edge.txt, node_features.txt, node_labels.txt. Formats are shown below.
-- edge.txt (two rows for each data which correspond to the two nodes that one edge connects)
+- edge.txt: two rows for each data. Both rows are node indices that one edge connects. The length of the row corresponds to the number of edge.
 ```
 Data0 0 0 0 ...
 Data0 1 2 6 ...
+```
+- node_features.txt: The number of rows for each data depends on the input dimension. E.g, if the input is [x, y, z],then there are 3 rows for each data, one for x, one for y, the other for z.
+```
+Data0 0.0 0.125 ...
+Data0 0.0 0.0 ...
+Data0 0.0 0.125 ...
 ```
 
 **Train and test**
