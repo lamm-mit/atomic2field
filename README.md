@@ -2,7 +2,7 @@
 
 ### Codes for translating structural defects to atomic properties 
 
-##### Z. Yang, M.J. Buehler, Linking Atomic Structural Defects to Mesoscale Properties in Crystalline Solids using Graph Neural Networks, npj Computational Materials, DOI: 10.1038/s41524-022-00879-4, 2022
+- Z. Yang, M.J. Buehler, Linking Atomic Structural Defects to Mesoscale Properties in Crystalline Solids using Graph Neural Networks, npj Computational Materials, DOI: 10.1038/s41524-022-00879-4, 2022
 
 ![Overall workflow](https://github.com/lamm-mit/atomic2field/blob/main/IMAGE_github.png)
 
@@ -58,4 +58,4 @@ python test.py --data_path "./data/" --batch_size 16 --input_dim 3 --num_layer 6
 
 **REFERENCE AND ORIGINAL PAPER**
 
-##### Z. Yang, M.J. Buehler, Linking Atomic Structural Defects to Mesoscale Properties in Crystalline Solids using Graph Neural Networks, npj Computational Materials, DOI: 10.1038/s41524-022-00879-4, 2022
+- Z. Yang, M.J. Buehler, Linking Atomic Structural Defects to Mesoscale Properties in Crystalline Solids using Graph Neural Networks, npj Computational Materials, DOI: 10.1038/s41524-022-00879-4, 2022
